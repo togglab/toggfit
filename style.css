@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: 6rem;
+}
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+h2 span {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+.container > div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+.container > div:nth-of-type(1) {
+  grid-column: 1 / 3;
+}
+.container > div:nth-of-type(6) {
+  grid-column: 3 / 5;
+}
+.container > div:nth-of-type(9) {
+  grid-column: 3 / 5;
+}
+.container > div:nth-of-type(10) {
+  grid-column: 1 / 3;
+}
+.bg {
+	border-radius: 20px;
+	overflow: hidden;
+}
+.bg1 {
+  background: url('https://images.unsplash.com/photo-1550007345-dcdff81aa558?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+	color: #333;
+}
+.bg2 {
+  background: url('https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1487&q=80');
+}
+.bg3 {
+  background: url('https://images.unsplash.com/photo-1560131324-735a23ea0304?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=1500&q=80');
+}
+.bg4 {
+  background: url('https://images.unsplash.com/photo-1549472579-e133f59d8b23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+}
+.bg5 {
+  background: url('https://images.unsplash.com/photo-1437751059337-ea72d4f73fcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1042&q=80');
+}
+.bg6 {
+  background: url('https://images.unsplash.com/photo-1551651057-f3f83700a831?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+	color: #333;
+}
+.bg7 {
+  background: url('https://images.unsplash.com/photo-1560773526-435221de2527?ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80');
+	color: #333;
+}
+.bg8 {
+  background: url('https://images.unsplash.com/photo-1495161054557-8377ed519797?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	color: #333;
+}
+.bg9 {
+  background: url('https://images.unsplash.com/photo-1559666126-84f389727b9a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1056&q=80');
+}
+.bg10 {
+  background: url('https://images.unsplash.com/photo-1469949376458-094571676254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQzMzEwfQ&auto=format&fit=crop&w=1050&q=80');
+	color: #333;
+}
+.bg11 {
+  background: url('https://images.unsplash.com/photo-1570257374937-1d2db29c7f12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjExMzk2fQ&auto=format&fit=crop&w=1644&q=80');
+}
+.bg12 {
+  background: url('https://images.unsplash.com/photo-1570829460005-c840387bb1ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+}
+.rouded {
+	border-radius: 50px;
+	overflow: hidden;
+}
+.health-nav {
+  font-family: Poppins, sans-serif;
+  color: #2f3640;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  position: relative;
+	margin: 1rem;
+	background-color: #fff;
+}
+.selector {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  background: pink;
+  border-radius: 50%;
+  z-index: 2;
+  transition: 0.3s ease;
+	margin: 4.5px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding-top: 13px;
+  cursor: pointer;
+  z-index: 3;
+}
+nav ul li span {
+  pointer-events: none;
+}
+.active {
+  color: #fff;
+}
+li.home {
+  color: purple;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
